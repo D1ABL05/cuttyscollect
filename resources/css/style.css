@@ -39,3 +39,32 @@ nav a {
 .company {
   text-align: center;
 }
+
+/* Featured */
+
+.featured {
+  margin-top: 2rem;
+}
+
+.featured h1 {
+
+}
+
+.featured img {
+  width: 210px;
+}
+
+.featured ul {
+  margin-top: 2rem;
+  display: inline-flex;
+  width: 100%;
+}
+
+.featured li {
+
+}
+
+/* Info */
+.info {
+  margin-top: 2rem;
+}

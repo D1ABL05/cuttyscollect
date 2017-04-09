@@ -3,10 +3,39 @@ html {
 }
 
 body {
+  width: 100%;
+}
+
+/* General Classes */
+.container {
+  display: flex;
+  width: 80%;
 
 }
 
-/* Classes */
-.container {
-  width: 960px;
+/* Header */
+header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: lightblue;
+}
+
+nav {
+  list-style: none;
+  display: flex;
+  margin: .5rem .1rem .5rem 7rem;
+  align-items: center;
+}
+
+nav li {
+ padding: 0 1.2rem;
+}
+
+nav a {
+
+}
+
+.company {
+  text-align: center;
 }

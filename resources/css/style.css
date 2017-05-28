@@ -12,14 +12,13 @@ body {
 .container {
   display: flex;
   width: 80%;
-  margin-top: 15px;
   margin-bottom: 15px;
 }
 
 /* Header */
 header {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: fixed;
   width: 100%;
   background-color: lightblue;
@@ -40,17 +39,62 @@ nav a {
 
 }
 
-.company {
-  display: inline-grid;
-  text-align: center;
+/* Company */
+@media only screen and (min-width: 600px) {
+  .tabnav, .mobinav {
+    display: none;
+  }
+
+  .company {
+    display: inline-grid;
+    text-align: center;
+  }
+
+  .company img {
+    margin: auto;
+  }
 }
+
+@media only screen and (max-width: 600px) and (min-width: 520px) {
+  .desknav, .mobinav, .company img {
+    display: none;
+    }
+
+    .company {
+      display: inline-grid;
+      text-align: center;
+    }
+
+  }
+
+@media only screen and (max-width: 520px) {
+  .desknav, .tabnav, .company img {
+    display: none;
+  }
+
+  header {
+    display: block;
+  }
+
+  .company {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .mobinav {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 
 /* Featured */
 
 .featured {
   display: inline-grid;
   width: 100%;
-  height: 325px;
+  height: auto;
   background-color: black;
   margin-top: 60px;
   text-align: center;

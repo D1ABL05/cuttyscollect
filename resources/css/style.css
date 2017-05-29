@@ -8,6 +8,12 @@ body {
   line-height: 1.2rem;
 }
 
+/* !!! SPECIAL CLASSES - REWORK INTO CODE ON CLEANUP & DELETE !!! */
+.textc {
+  color: white;
+}
+/* !!! END OF SPECIAL CLASSES !!! */
+
 /* General Classes */
 .container {
   display: flex;

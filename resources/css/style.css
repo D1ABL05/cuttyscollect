@@ -64,7 +64,6 @@ nav a {
       display: inline-grid;
       text-align: center;
     }
-
   }
 
 @media only screen and (max-width: 520px) {
@@ -78,6 +77,7 @@ nav a {
 
   .company {
     display: flex;
+    text-align: center;
     justify-content: space-around;
   }
 
@@ -96,7 +96,6 @@ nav a {
   width: 100%;
   height: auto;
   background-color: black;
-  margin-top: 60px;
   text-align: center;
 }
 
@@ -104,32 +103,138 @@ nav a {
   color: white;
   margin: auto;
 }
+/* Changing featured top margin with header */
+@media only screen and (min-width: 600px) {
+  .featured {
+    margin-top: 3.9rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .featured {
+    margin-top: 2.4rem;
+  }
+}
+
+/* Featured PH images desk */
+@media only screen and (min-width: 770px) {
+  .featured img {
+    display: inline-flex;
+    width: 13rem;
+    margin: 15px;
+  }
+}
+/* Featured PH images tablet */
+@media only screen and (max-width: 770px) and (min-width: 520px) {
+  .featured img {
+    display: inline-flex;
+    width: 8rem;
+    margin: 10px;
+  }
+}
+/* Featured PH images mobile */
+@media only screen and (max-width: 520px) {
+  .featured img {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
 
 /* Info */
-.info {
-  margin-top: 2rem;
-  display: flex;
+/* Changing orientation for desktop */
+@media only screen and (min-width: 630px) {
+  .info {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .tinfo {
+    width: 40%;
+  }
+
+  .tinfo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2.25rem;
+  }
+
+  .tpic {
+    width: 40%;
+  }
+
+  .tpic img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* Changing orientation for mobile */
+@media only screen and (max-width: 630px) {
+  .info {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .tinfo {
+    width: 100%;
+    margin-bottom: auto;
+  }
+
+  .tinfo h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2.25rem;
+  }
+
+  .tinfo p {
+    margin: 30px;
+    padding: 20px 0px;
+    border-bottom: solid 2px black;
+    border-top: solid 2px black;
+  }
+
+  .tpic {
+    width: 100%;
+  }
+
+  .tpic img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ainfo, similar to info */
+.about {
+  display: block;
   width: 100%;
-  justify-content: space-around;
+  text-align: center;
+}
+.ainfo {
+  width: 100%;
+  margin-bottom: auto;
 }
 
-.tinfo {
-  width: 40%;
-}
-
-.tinfo h2 {
+.ainfo h2 {
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 2.25rem;
 }
 
-.tpic {
-  width: 40%;
+.ainfo p {
+  margin: 30px;
+  padding: 20px 0px;
+  border-bottom: solid 2px black;
+  border-top: solid 2px black;
 }
 
-.tpic img {
-  width: 300px;
-  height: 400px;
+.apic {
+  width: 100%;
+}
+
+.apic img {
+  width: 100%;
+  height: 100%;
 }
 
 /* Footer */
